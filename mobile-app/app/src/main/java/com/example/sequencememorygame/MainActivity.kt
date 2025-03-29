@@ -26,6 +26,17 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, InstructionsActivity::class.java)
             startActivity(intent)
         }
+
+        playButton.setOnClickListener {
+            val intent = Intent(this, PlayActivity::class.java)
+            startActivity(intent)
+        }
+
+        rankingButton.setOnClickListener {
+            val intent = Intent(this, HighScoreActivity::class.java)
+            startActivity(intent)
+        }
+
         devButton.setOnClickListener {
             val intent = Intent(this, DevActivity::class.java)
             startActivity(intent)

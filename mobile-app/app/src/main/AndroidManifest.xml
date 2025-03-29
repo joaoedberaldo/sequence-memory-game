@@ -21,7 +21,9 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-    <activity android:name=".DevActivity" android:exported="true"/>
     <activity android:name=".InstructionsActivity" android:exported="true"/>
+    <activity android:name=".PlayActivity" android:exported="true"/>
+    <activity android:name=".HighScoreActivity" android:exported="true"/>
+    <activity android:name=".DevActivity" android:exported="true"/>
     </application>
 </manifest>
