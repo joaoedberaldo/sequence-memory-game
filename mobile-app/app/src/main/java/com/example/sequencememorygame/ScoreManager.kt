@@ -26,11 +26,7 @@ class ScoreManager (private val context: Context) {
         return allScores.sortedByDescending { it.second }.take(3)
     }
 
-    /**
-     * Add a new score and maintain only the top 3
-     * @param playerName The name of the player
-     * @param score The player's score
-     */
+    //save Score
     fun addScore(playerName: String, score: Int) {
         // Don't save scores for unnamed players
         if (playerName.isBlank()) return
@@ -43,7 +39,7 @@ class ScoreManager (private val context: Context) {
         editor.putString("name_$currentCount", playerName)
         editor.putInt("score_$currentCount", score)
 
-        // Increment the count
+        // count+1
         editor.putInt("score_count", currentCount + 1)
 
         // Apply changes

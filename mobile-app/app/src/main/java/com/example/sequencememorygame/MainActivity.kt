@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val nameInput = findViewById<EditText>(R.id.edtUserName)
 
-//      Buttons below
+        //Main Buttons
         val instructionsButton = findViewById<Button>(R.id.btnInstructions)
         val playButton = findViewById<Button>(R.id.btnPlay)
         val rankingButton = findViewById<Button>(R.id.btnHighScore)

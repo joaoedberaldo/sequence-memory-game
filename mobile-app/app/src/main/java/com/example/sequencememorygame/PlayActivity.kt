@@ -18,7 +18,6 @@ class PlayActivity : AppCompatActivity() {
     private var score: Int = 0
 
     // Game state variables (Start as lvl 1 and select 4 tiles)
-//    private var level: Int = 1
     private var successfulRounds: Int = 0
     private var tilesToSelect: Int = 4
     private var tilesSelected: Int = 0
