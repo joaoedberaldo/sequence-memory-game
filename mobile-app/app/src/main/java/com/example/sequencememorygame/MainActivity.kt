@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         playButton.setOnClickListener {
+            val userName = nameInput.text.toString().trim()
             val intent = Intent(this, PlayActivity::class.java)
+            intent.putExtra("PLAYER_NAME", userName)
             startActivity(intent)
         }
 
