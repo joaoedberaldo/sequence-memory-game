@@ -85,8 +85,8 @@ class PlayActivity : AppCompatActivity() {
         for (i in 0 until 36) {
             val button = Button(this).apply {
                 layoutParams = GridLayout.LayoutParams().apply {
-                    width = 160
-                    height = 160
+                    width = 170
+                    height = 170
                     setMargins(4, 4, 4, 4)
                 }
                 setBackgroundColor(Color.BLUE)
